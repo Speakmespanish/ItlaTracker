@@ -1,0 +1,39 @@
+.logout-container {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #666;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .submit-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 2px #666;
+  }
+  
+  .submit-button:hover {
+    background-color: #3e8e41;
+  }

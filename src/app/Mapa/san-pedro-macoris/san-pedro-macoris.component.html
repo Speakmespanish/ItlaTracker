@@ -1,1 +1,83 @@
-<p>san-pedro-macoris works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Quick Start - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+<h3>Ruta de pintura</h3>
+<div id="map" style="width: 500px; height: 500px;"></div>
+<script>
+
+	const map = L.map('map').setView([18.975751759716434, -70.28707933919718], 14);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	    const HAZIM = L.marker([18.454772, -69.298515]).addTo(map)
+		.bindPopup('Calle JOSE HAZIM AZAR').openPopup();
+        const LUISA = L.marker([18.456654, -69.293114]).addTo(map)
+		.bindPopup('Calle LUIS AMIAMA TIO').openPopup();
+        const FACAAMAno = L.marker([18.458988, -69.292809]).addTo(map)
+		.bindPopup('AV. F. A.CAAMAÑO D.').openPopup();
+        const FACAAMAnoClinica = L.marker([18.461870, -69.295243]).addTo(map)
+		.bindPopup('AV. F. A.CAAMAÑO D.').openPopup();        
+        const INDEPENDENCIA = L.marker([18.464626, -69.296245]).addTo(map)
+		.bindPopup('AV. INDEPENDENCIA').openPopup();
+        const MAURICIOB = L.marker([18.465390, -69.299340]).addTo(map)
+		.bindPopup('AV. MAURICIO BAEZ').openPopup();
+        const LAUREANOC = L.marker([18.46310982350675, -69.30224536906324]).addTo(map)
+		.bindPopup('AVE. LAUREANO CANTO').openPopup();
+        const SIMONB = L.marker([18.462269593691204, -69.30770382423476]).addTo(map)
+		.bindPopup('CALLE SIMON BOLIVAR').openPopup();
+        const MAXIMILIANOG = L.marker([18.461649079896148, -69.31039699314802]).addTo(map)
+		.bindPopup('CALLE MAXIMILIANO GOMEZ ').openPopup();
+        const JUANA = L.marker([18.461090425668537, -69.31284774395827]).addTo(map)
+		.bindPopup('CALLE JUAN ACOSTA ').openPopup();
+        const MARIAQ = L.marker([18.45857442205712, -69.31654010317975]).addTo(map)
+		.bindPopup('CALLE MARIA ANTONIA QUIRICO ').openPopup();
+        const Bomba = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const Bombero = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const Laseptima = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const Parada = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const Frenteclaro = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const Elevado = L.marker([]).addTo(map)
+		.bindPopup('AUTOPISTA LAS AMERICAS').openPopup();
+        const ITLA = L.marker([18.451311, -69.663091
+]).addTo(map)
+		.bindPopup('ITLA').openPopup();
+
+
+</script>

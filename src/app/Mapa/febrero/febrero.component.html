@@ -1,1 +1,88 @@
-<p>febrero works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Quick Start - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+<h3>Ruta de pintura</h3>
+<div id="map" style="width: 500px; height: 500px;"></div>
+<script>
+
+	const map = L.map('map').setView([18.975751759716434, -70.28707933919718], 14);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	const pintura = L.marker([18.45114626597078, -69.97906558786502]).addTo(map)
+		.bindPopup('Parada pintura.').openPopup();
+        const Fuerzas = L.marker([18.45527295981478, -69.97158761967914]).addTo(map)
+		.bindPopup('Secretaria Fuerzas Armadas.').openPopup();
+        const Caonabo = L.marker([18.45623455570022, -69.96840861067271]).addTo(map)
+		.bindPopup('Av. Caonabo').openPopup();
+        const Privada = L.marker([18.456944259062602, -69.96168355613254]).addTo(map)
+		.bindPopup('Av. Privada').openPopup();
+        const Nuñez = L.marker([18.461521151972416, -69.95467945608605]).addTo(map)
+		.bindPopup('Av. Nuñez de Cáceres').openPopup();
+        const Defilló = L.marker([18.464753988259737, -69.94653486504687]).addTo(map)
+		.bindPopup('Av. Dr. Arturo F. Defilló').openPopup();
+        const Churchill = L.marker([18.467333553201087, -69.9360492559584]).addTo(map)
+		.bindPopup('Av. Winston Churchill').openPopup();
+        const Lincoln = L.marker([18.472457930330787, -69.92797399667515]).addTo(map)
+		.bindPopup('Av. Abraham Lincoln').openPopup();
+        const Tirandente = L.marker([18.474456811320945, -69.92345725585113]).addTo(map)
+		.bindPopup('Av. Tirandente').openPopup();
+        const Gómez = L.marker([18.48268923567384, -69.91295101025534]).addTo(map)
+		.bindPopup('Av. Máximo Gómez').openPopup();
+        const Navarro = L.marker([18.47965601404899, -69.90634566476545]).addTo(map)
+		.bindPopup('Av. Leopoldo Navarro').openPopup();
+        const México = L.marker([18.485128678593956, -69.88816106470473]).addTo(map)
+		.bindPopup('Av. México esq. Duarte').openPopup();
+        const Calle = L.marker([18.488572679133114, -69.87726104190716]).addTo(map)
+		.bindPopup('Calle Real AV. España').openPopup();
+        const Venezuela = L.marker([18.490313898130818, -69.86862761912103]).addTo(map)
+		.bindPopup('Av. Venezuela').openPopup();
+        const Sabana = L.marker([18.491498805813237, -69.86579741012139]).addTo(map)
+		.bindPopup('Av. Sabana Larga').openPopup();
+        const Contreras = L.marker([18.48990921067562, -69.86118107363073]).addTo(map)
+		.bindPopup('Darío Contreras').openPopup();
+        const ojos = L.marker([18.486959102117705, -69.84245412818069]).addTo(map)
+		.bindPopup('Los tres ojos').openPopup();
+        const Juan = L.marker([18.476196986126325, -69.83018288760951]).addTo(map)
+		.bindPopup('Puente Juan Carlos').openPopup();
+        const Bnuevo = L.marker([18.47264591047451, -69.81323412844776]).addTo(map)
+		.bindPopup('Barrio Nuevo').openPopup();
+        const Llave = L.marker([18.471081540444604, -69.79851233317146]).addTo(map)
+		.bindPopup('La Llave').openPopup();
+        const ITLA = L.marker([18.458130382647706, -69.66255166514618]).addTo(map)
+		.bindPopup('ITLA').openPopup();
+
+
+</script>

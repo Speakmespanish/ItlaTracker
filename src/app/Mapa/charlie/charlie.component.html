@@ -1,1 +1,74 @@
-<p>charlie works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Quick Start - Leaflet</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+	
+</head>
+<body>
+
+
+<h3>Ruta de pintura</h3>
+<div id="map" style="width: 500px; height: 500px;"></div>
+<script>
+
+	const map = L.map('map').setView([18.975751759716434, -70.28707933919718], 14);
+
+	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
+
+	    const VMella = L.marker([18.55186306199456, -69.89880288641292]).addTo(map)
+		.bindPopup('Villa Mella').openPopup();
+        const SabanaP = L.marker([18.547865511479028, -69.85991655470062]).addTo(map)
+		.bindPopup('Sabana Perdida').openPopup();
+        const Cansino = L.marker([18.532236678208065, -69.84363613215858]).addTo(map)
+		.bindPopup('Cansino').openPopup();
+        const CarreteraM = L.marker([18.522184409374795, -69.83380408686223]).addTo(map)
+		.bindPopup('Carretera Mella').openPopup();
+        const Trinitarios = L.marker([18.512986350688475, -69.83152862304509]).addTo(map)
+		.bindPopup('Club los Trinitarios').openPopup();
+        const Invivienda = L.marker([18.508951550342157, -69.829266532892]).addTo(map)
+		.bindPopup('Invivienda').openPopup();
+        const VillaC = L.marker([18.503342583710946, -69.82616576980979]).addTo(map)
+		.bindPopup('Villa Carmen').openPopup();
+        const Mendoza = L.marker([18.49846514593546, -69.82370755798708]).addTo(map)
+		.bindPopup('Mendoza').openPopup();
+        const SIsidro = L.marker([18.488531542890673, -69.82590089511817]).addTo(map)
+		.bindPopup('San Isidro').openPopup();
+        const BrisaE = L.marker([18.480464141373897, -69.82795373553002]).addTo(map)
+		.bindPopup('Brisa del Este').openPopup();
+        const Juan = L.marker([18.476196986126325, -69.83018288760951]).addTo(map)
+		.bindPopup('Puente Juan Carlos').openPopup();
+        const Bnuevo = L.marker([18.47264591047451, -69.81323412844776]).addTo(map)
+		.bindPopup('Barrio Nuevo').openPopup();
+        const Llave = L.marker([18.471081540444604, -69.79851233317146]).addTo(map)
+		.bindPopup('La Llave').openPopup();
+        const ITLA = L.marker([18.458130382647706, -69.66255166514618]).addTo(map)
+		.bindPopup('ITLA').openPopup();
+
+
+</script>
